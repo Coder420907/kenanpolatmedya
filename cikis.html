@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Videograph, unica, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="dosya/logo.jpg">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Kenan Polat Bot Anasayfa</title>
+<META name="Author" content="Rzayev Kenan">
+<META name="Copyright" content="© Tüm Hakları Saklıdır.">
+<meta property="og:image" content="/dosya/logo.jpg" />
+<meta name="keywords" content="discord türk botu, discord türk botları, en iyi discord türk botu, türk botları, kenan polat, kp-at, kenan polat panel, türkçe discord botu, otorol botu, koruma botu">
+<meta name="description" content="Kenan Polat; Discordun En Sevimli botudur, hızlı altyapısı sayesinde en güçlü saldırıları anında koruyor." />
+
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+        body
+{
+  background: #000e29;
+}
+
+.alert>.start-icon {
+    margin-right: 0;
+    min-width: 20px;
+    text-align: center;
+}
+
+.alert>.start-icon {
+    margin-right: 5px;
+}
+
+.greencross
+{
+  font-size:18px;
+      color: #25ff0b;
+    text-shadow: none;
+}
+
+.alert-simple.alert-success
+{
+  border: 1px solid rgba(36, 241, 6, 0.46);
+    background-color: rgba(7, 149, 66, 0.12156862745098039);
+    box-shadow: 0px 0px 2px #259c08;
+    color: #0ad406;
+  text-shadow: 2px 1px #00040a;
+  transition:0.5s;
+  cursor:pointer;
+}
+.alert-success:hover{
+  background-color: rgba(7, 149, 66, 0.35);
+  transition:0.5s;
+}
+.alert-simple.alert-info
+{
+  border: 1px solid rgba(6, 44, 241, 0.46);
+    background-color: rgba(7, 73, 149, 0.12156862745098039);
+    box-shadow: 0px 0px 2px #0396ff;
+    color: #0396ff;
+  text-shadow: 2px 1px #00040a;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+.alert-info:hover
+{
+  background-color: rgba(7, 73, 149, 0.35);
+  transition:0.5s;
+}
+
+.blue-cross
+{
+  font-size: 18px;
+    color: #0bd2ff;
+    text-shadow: none;
+}
+
+.alert-simple.alert-warning
+{
+      border: 1px solid rgba(241, 142, 6, 0.81);
+    background-color: rgba(220, 128, 1, 0.16);
+    box-shadow: 0px 0px 2px #ffb103;
+    color: #ffb103;
+    text-shadow: 2px 1px #00040a;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+.alert-warning:hover{
+  background-color: rgba(220, 128, 1, 0.33);
+  transition:0.5s;
+}
+
+.warning
+{
+      font-size: 18px;
+    color: #ffb40b;
+    text-shadow: none;
+}
+
+.alert-simple.alert-danger
+{
+  border: 1px solid rgba(241, 6, 6, 0.81);
+    background-color: rgba(220, 17, 1, 0.16);
+    box-shadow: 0px 0px 2px #ff0303;
+    color: #ff0303;
+    text-shadow: 2px 1px #00040a;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+.alert-danger:hover
+{
+     background-color: rgba(220, 17, 1, 0.33);
+  transition:0.5s;
+}
+
+.danger
+{
+      font-size: 18px;
+    color: #ff0303;
+    text-shadow: none;
+}
+
+.alert-simple.alert-primary
+{
+  border: 1px solid rgba(6, 241, 226, 0.81);
+    background-color: rgba(1, 204, 220, 0.16);
+    box-shadow: 0px 0px 2px #03fff5;
+    color: #03d0ff;
+    text-shadow: 2px 1px #00040a;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+.alert-primary:hover{
+  background-color: rgba(1, 204, 220, 0.33);
+   transition:0.5s;
+}
+
+.alertprimary
+{
+      font-size: 18px;
+    color: #03d0ff;
+    text-shadow: none;
+}
+
+.square_box {
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top-left-radius: 45px;
+    opacity: 0.302;
+}
+
+.square_box.box_three {
+    background-image: -moz-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+    background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+    background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+    opacity: 0.059;
+    left: -80px;
+    top: -60px;
+    width: 500px;
+    height: 500px;
+    border-radius: 45px;
+}
+.square_box.box_four {
+    background-image: -moz-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+    background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+    background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+    opacity: 0.059;
+    left: 150px;
+    top: -25px;
+    width: 550px;
+    height: 550px;
+    border-radius: 45px;
+}
+
+.alert:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: calc(100% - 44px);
+    border-left: 1px solid;
+    border-right: 2px solid;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+      height: 20px;
+}
+
+.fa-times
+{
+-webkit-animation: blink-1 2s infinite both;
+	        animation: blink-1 2s infinite both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation blink-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+</style>
+<link rel="stylesheet" href="css2/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css2/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css2/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css2/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css2/magnific-popup.css" type="text/css">
+<link rel="stylesheet" href="css2/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css2/style.css" type="text/css">
+</head>
+<body>
+
+
+<header class="header">
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<div class="header__logo">
+<strong> <a class="navbar-brand" href="cikis.html#">KENAN POLAT</a></strong>
+</div>
+</div>
+<div class="col-lg-10">
+<div class="header__nav__option">
+<nav class="header__nav__menu mobile-menu">
+<ul>
+<li class="active"><a href="cikis.html#burdasin">Ana Sayfa</a></li>
+<li><a href="premium.html">Premium</a></li>
+<li><a href="market/index.html">Market</a></li>
+<li><a href="https://blog.rzayevkenan.com">Blog</a></li>
+<li><a href="durum.html">Status</a></li>
+<li><a href="destek.html">Discordumuz</a></li>
+<li><a href="discord/index.html">Yönetim Panel</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id="mobile-menu-wrap"></div>
+</div>
+</header>
+
+
+<section class="hero">
+<div class="hero__slider owl-carousel">
+<div class="hero__item set-bg" data-setbg="img2/team-bg.jpg">
+</script>
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="hero__text">
+<span>SlimmWEB Teknolojisi Sayesinde En Güçlü Altyapıya Sahibiz!</span>
+<h2>En Iyi Altyapı</h2>
+<a href="discord/index.html" class="primary-btn">Hadi Başlayalım</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hero__item set-bg" data-setbg="img2/team-bg.jpg">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="hero__text">
+<span>Güçlü altyapı Sayesinde Kenan Polat Botu 7/24 Kalarak Sunucularınızı Koruyor!</span>
+<h2>99% Uptime</h2>
+<a href="discord/index.html" class="primary-btn">Hadi Başlayalım</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hero__item set-bg" data-setbg="img2/team-bg.jpg">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="hero__text">
+<span>Kenan Polat Korumaları Sayesinde Sunucunuz Hiçbir Zarar Almayacak!</span>
+<h2>Full Koruma</h2>
+<a href="discord/index.html" class="primary-btn">Hadi Başlayalım</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="services spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-4">
+<div class="services__title">
+<div class="section-title">
+<span>Kenan Polat</span>
+<h2>Neden Biz?</h2>
+</div>
+<p>Kenan Polat Full Korumalar Sayesinde Sunucunuz 7/24 Korunuyor. Anında Saldırı Tespit Edilirse Kenan Polat Sunucunuzu Sonuna Kadar Koruyor. Saldırı Yapan Kişiler Sunucudan Banlanıyor :)</p>
+<a href="davet.html" class="primary-btn">Davet Et</a>
+</div>
+</div>
+<div class="col-lg-8">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="services__item">
+<div class="services__item__icon">
+<img src="img2/icons/si-1.png" alt="">
+</div>
+<h4>99% Uptime</h4>
+<p>Güçlü altyapı, kesintisiz güç kaynakları, güçlü internet bağlantısı, evet hepsine sahibiz :)</p>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="services__item">
+<div class="services__item__icon">
+<img src="img2/icons/ci-3.png" alt="">
+</div>
+<h4>Basitleştirilmiş Tasarım</h4>
+<p>Kolay yardım menüsü, internet sitemizde tek tıkla düzenleyebileceğiniz birçok sistem.</p>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="services__item">
+<div class="services__item__icon">
+<img src="img2/icons/si-2.png" alt="">
+</div>
+<h4>Güvenlik</h4>
+<p>Geceleri Uyurken Kenan Polat Sunucunuzu Saldırğanlardan Koruyor.</p>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="services__item">
+<div class="services__item__icon">
+<img src="img2/icons/ci-4.png" alt="">
+</div>
+<h4>Canlı Destek</h4>
+<p>sorununuz mu var? en hızlı çözüm bizde!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="work">
+<div class="work__gallery">
+<div class="grid-sizer"></div>
+<div class="work__item wide__item set-bg" data-setbg="img2/icons/unknown.png">
+<a href="https://www.youtube.com/watch?v=8gZBdo_7qCw" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+<div class="work__item__hover">
+<h4>Kenan Polat R2 - Discord Rainbow!</h4>
+<ul>
+<li>Kenan Polat</li>
+<li>YouTube</li>
+</ul>
+</div>
+</div>
+<div class="work__item small__item set-bg" data-setbg="img2/icons/tones.png">
+<a href="https://www.youtube.com/watch?v=UrNckcqrwro" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+</div>
+<div class="work__item small__item set-bg" data-setbg="img2/icons/no2.png">
+<a href="https://www.youtube.com/watch?v=opx9U5ptn88" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+</div>
+<div class="work__item large__item set-bg" data-setbg="img2/icons/kp.jpg">
+<a href="https://www.youtube.com/watch?v=6QakKRPsneM" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+<div class="work__item__hover">
+<h4>KENAN POLATIN GÜCÜ!</h4>
+<ul>
+<li>Kenan Polat</li>
+<li>YouTube</li>
+</ul>
+</div>
+</div>
+<div class="work__item small__item set-bg" data-setbg="img2/icons/kenan.png">
+<a href="https://www.youtube.com/watch?v=c6eonz7sFvs" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+</div>
+<div class="work__item small__item set-bg" data-setbg="img2/icons/no3.png">
+<a href="https://www.youtube.com/watch?v=DAYhJvPmDZE" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+</div>
+<div class="work__item wide__item set-bg" data-setbg="img2/icons/no1.png">
+<a href="https://www.youtube.com/watch?v=L99iQgv-DwE" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+<div class="work__item__hover">
+<h4>Discord No.1 (Canavar) Söylüyor</h4>
+<ul>
+<li>Kenan Polat</li>
+<li>YouTube</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="counter">
+<div class="container">
+<div class="counter__content">
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item">
+<div class="counter__item__text">
+<img src="img2/icons/ci-1.png" alt="">
+<h2 class="counter_num">273</h2>
+<p>Sunucu</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item second__item">
+<div class="counter__item__text">
+<img src="img2/icons/ci-2.png" alt="">
+<h2>91,196</h2>
+<p>Kullanıcı</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item third__item">
+ <div class="counter__item__text">
+<img src="img2/icons/ci-3.png" alt="">
+<h2 class="counter_num">311</h2>
+<p>Websiteye Toplam Giriş</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class="counter__item four__item">
+<div class="counter__item__text">
+<img src="img2/icons/ci-4.png" alt="">
+<h2 class="counter_num">20</h2>
+<p>Aktif Shard Sayısı</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="latest spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="section-title center-title">
+<span>KENAN POLAT</span>
+<h2>Hakkımızda Söylenilenler</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="latest__slider owl-carousel">
+<div class="col-lg-4">
+<div class="blog__item latest__item">
+<h4>Kaan Sarı</h4>
+<ul>
+<li>Ağustos 15, 2020</li>
+<li>Paylaşıldı</li>
+</ul>
+<p>Kenan Polat Sayesinde Kendi Sunucumda Otorol Ve Kayıt Sistemini Ayarladım. Websiteden kullanım çok hoşuma gitti. Sunucuma Saldırı Yediğimiz An Kenan Polat Saldıran Kişileri Banladı. Tek Kelimeyle Efsane!</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="blog__item latest__item">
+<h4>Ziya Bilgin</h4>
+<ul>
+<li>Ağustos 18, 2020</li>
+<li>Paylaşıldı</li>
+</ul>
+<p>Hayatımda Gördüğüm En İyi Bot. Botda Öle Koruma Sistemleri Varki, Sunucunuza Saldırı Yediğiniz An Kenan Polat Devreye Giriyor. Saolsun Botun Sahibi 1Yıllık Premium Paketi Verdi. Herkese Tercih Ederim!</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="blog__item latest__item">
+<h4>Berke Özkan</h4>
+<ul>
+<li>Ağustos 16, 2020</li>
+<li>Paylaşıldı</li>
+</ul>
+<p>Mükemmel Bir Bot Herkese Tavsiye Ederim. İlgili Yetkili Kadrosu Ve Kaliteli Hizmet Anlayışları Var</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="blog__item latest__item">
+<h4>Rzayev Kenan</h4>
+<ul>
+<li>Ağustos 03, 2020</li>
+<li>Paylaşıldı</li>
+</ul>
+<p>En Büyük Projelerimden Biriside Kenan Polatdır. En İyi Hizmeti Vermek İçin Herşey Yapıyoruz!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="callto spad set-bg" data-setbg="img2/team-bg.jpg">
+<center>
+<a href="https://slimmweb.com" target="_blank">
+<div>
+<img style="width:250px" src="https://resimyukle.slimmweb.com.tr/upload/Slimmweb.svg">
+</div>
+<div style="margin-top:20px"><strong>KenanPolat</strong> gücünü <strong>Slimmweb</strong>'den alır.</div>
+</a>
+</center>
+</section>
+
+
+<footer class="footer">
+<div class="container">
+<div class="footer__top">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<div class="footer__top__logo">
+<strong> <a class="navbar-brand" href="cikis.html#">KENAN POLAT</a></strong>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+</div>
+</div>
+</div>
+<div class="footer__option">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="footer__option__item">
+<h5>Hakkımızda</h5>
+<p>Discordda Tamı Tamına 3Yıldır Hizmet Veriyoruz. Vermeyede Devam Ediceğiz. Hep Daha İleriyi Bizimle!</p>
+</div>
+</div>
+<div class="col-lg-2 col-md-3 col-sm-3">
+<div class="footer__option__item">
+<h5>Gerekli Linkler</h5>
+<ul>
+<li><a href="discord/index.html">Yönetim Panel</a></li>
+<li><a href="status.html">Status</a></li>
+<li><a href="davet.html">Kenan Polat</a></li>
+<li><a href="davet2.html">Kenan Polat Panel</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-3 col-sm-3">
+<div class="footer__option__item">
+<h5>Kenan Polat</h5>
+<ul>
+<li><a href="yt.html">YouTube</a></li>
+<li><a href="destek.html">Discord</a></li>
+<li><a href="hakkimda.html">Hakkımızda</a></li>
+<li><a href="market.html">Market</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-3 col-sm-3">
+<div class="footer__option__item">
+<h5>Iletişim Bilgileri</h5>
+<ul>
+<li><a><span class="__cf_email__" data-cfemail="bcd5d2dad3fcd7d9d2ddd2ccd3d0ddc892d2d9c8">[email&#160;protected]</span></a></li>
+<li><a href="destek.html">Discord Sunucumuz</a></li>
+<li><a>+994507088104</a></li>
+<li><a href="https://instagram.com/kenanpolatmedya/">Instagram</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__copyright">
+<div class="row">
+<div class="col-lg-12 text-center">
+
+<p class="footer__copyright__text">&copy;
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                                document.write(new Date().getFullYear());
+                            </script>
+<i class="ti-heart" aria-hidden="true"></i> <a href="http://rzayevkenan.com" target="_blank">RzayevKenan.Com</a></p>
+<a href="https://www.dmca.com/Protection/Status.aspx?ID=59cb9d55-1dd3-4e85-adea-a9f44816ac6f" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca_protected_sml_120e.png?ID=59cb9d55-1dd3-4e85-adea-a9f44816ac6f" alt="DMCA.com Protection Status" /></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<script src="js2/jquery-3.3.1.min.js"></script>
+<script src="js2/bootstrap.min.js"></script>
+<script src="js2/jquery.magnific-popup.min.js"></script>
+<script src="js2/mixitup.min.js"></script>
+<script src="js2/masonry.pkgd.min.js"></script>
+<script src="js2/jquery.slicknav.js"></script>
+<script src="js2/owl.carousel.min.js"></script>
+<script src="js2/main.js"></script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<center>
+<script>
+Swal.fire({
+  type: 'success',
+  title: 'Çıkış Yapıldı.',
+  text: 'Başarıyla Sitemizden Çıkış Yaptınız.',
+
+})
+</script>
+<center>
+<br>
+<style>
+input[type=textt] {
+  width: 240px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 12px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=textt]:focus {
+  width: 40%;
+}
+</style>
+</html>
